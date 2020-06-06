@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>May Tinh</title>
+    <link rel="stylesheet" href="maytinh.css">
+    <script src="maytinh.js"></script>
+  </head>
+  <body>
+    <div class="containner">
+      <div id="display">0</div>
+      <div class="button-containner">
+        <div>
+          <button type="button" class="grey-button" id="clear-all" onclick="clearAll()">AC</button>
+          <button type="button" class="grey-button" onclick="yinYang()">+/-</button>
+          <button type="button" class="grey-button" onclick="persentButton()">%</button>
+          <button type="button" class="orange-button" data-action="divide">÷</button>
+        </div>
+        <div>
+          <button type="button" onclick="insertNum(7)">7</button>
+          <button type="button" onclick="insertNum(8)">8</button>
+          <button type="button" onclick="insertNum(9)">9</button>
+          <button type="button" class="orange-button" data-action="multiply">×</button>
+        </div>
+        <div>
+          <button type="button" onclick="insertNum(4)">4</button>
+          <button type="button" onclick="insertNum(5)">5</button>
+          <button type="button" onclick="insertNum(6)">6</button>
+          <button type="button" class="orange-button" data-action="subtract">−</button>
+        </div>
+        <div>
+          <button type="button" onclick="insertNum(1)">1</button>
+          <button type="button" onclick="insertNum(2)">2</button>
+          <button type="button" onclick="insertNum(3)">3</button>
+          <button type="button" class="orange-button" data-action="add">+</button>
+        </div>
+        <div>
+          <button type="button" style="width: 108px;" onclick="insertNum(0)">0</button>
+          <button type="button" onclick="insertSym()">.</button>
+          <button type="button" class="orange-button" data-action="calculate">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
